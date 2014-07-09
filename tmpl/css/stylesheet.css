@@ -1,0 +1,159 @@
+@CHARSET "UTF-8";
+
+@media only screen and (max-width: 660px) {
+    div.facebook-post {
+        padding: 25px 10px 10px 10px !important;
+    }
+    div.facebook-post img.facebook-logo  {
+        margin-left: 7% !important;
+    }
+
+    div.facebook-post div.fb-button-jemma {
+        margin-right: 7% !important;
+    }
+
+    div.facebook-post p.message {
+        font-size: 16px !important;
+        line-height: normal !important;
+    }
+
+    div.facebook-post .facebook-username {
+        display: none !important;
+    }
+}
+
+div.facebook-post{
+    padding: 25px 50px 10px 50px;
+    /*height: 100%;*/
+    position: relative;
+}
+
+div.facebook-post div.fb-button-jemma button {
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+    color: #000000;
+    font-size: 12px;
+    background: #ffffff;
+    padding: 5px 15px 5px 15px;
+    border: solid #000000 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: auto;
+	margin:0;
+    display: none;
+}
+
+div.facebook-post button:hover
+    {
+    background: #F2F2F2;
+}
+
+div.facebook-post p.facebook-username, div.facebook-post p.message a {
+    color: #3B5998;
+    text-decoration: none;
+}
+
+div.facebook-post p.facebook-username {
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+div.facebook-post p.message {
+    text-align: left;
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+    font-size:22px;
+    line-height:30px;
+    margin: 45px 7%;
+    margin-bottom: 120px;
+    word-break: break-word;
+}
+
+div.facebook-post p.message a {
+    color: #69b2cb;
+    text-decoration: none;
+}
+
+div.facebook-post > div.fb-button-jemma {
+    position: relative;
+    float:right;
+}
+
+div.facebook-post div {
+    text-align:center;
+}
+
+div.facebook-post div a p.name {
+    display:inline-block;
+    vertical-align: bottom;
+    font-family: 'OpenSans-Regular', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    vertical-align: top;
+    text-decoration: none;
+    color:black;
+}
+
+div.facebook-post div a p.name:hover{
+    color:#69b2cb;
+}
+
+div.facebook-post div a img.profile-picture {
+    display:inline-block;
+    -webkit-filter: grayscale(100%) invert(100%);
+    filter: grayscale(100%) invert(100%);
+    border-radius: 25px;
+    height: 50px;
+    border: 1px solid;
+}
+div.facebook-post div.name-picture {
+    width:40%;
+    margin: auto;
+    display: table;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    table-layout: fixed;
+}
+
+div.facebook-post div.name-picture a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+div.facebook-post div.name-picture a + a {
+    text-align: left;
+    padding-left: 5px
+}
+
+div.facebook-post div.name-picture a img {
+    display: inline;
+    vertical-align: middle;
+}
+
+@-moz-document url-prefix() {
+    div.facebook-post div.name-picture {
+        display:block;
+        bottom:inherit;
+        left:inherit;
+        position: static;
+        text-align: center;
+    }
+    div.facebook-post div.name-picture a {
+        display:inline;
+    }
+}
+
+div.fb-like {
+    /*position: absolute;*/
+	transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	left:0px;
+	/*height:20px;*/
+	overflow:hidden;
+	opacity: 1;
+}

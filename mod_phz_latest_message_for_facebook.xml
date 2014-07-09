@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>MOD_PHZ_LATEST_MESSAGE_FOR_FACEBOOK</name>
+    <creationDate>2014</creationDate>
+    <author>Pharazon Ab</author>
+    <authorEmail>phz@phz.fi</authorEmail>
+    <authorUrl>http://www.phz.fi</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_PHZ_LATEST_MESSAGE_FOR_FACEBOOK_DESC</description>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <files>
+        <folder>languages</folder>
+        <folder>tmpl</folder>
+        <folder>tmpl/css</folder>
+        <folder>tmpl/js</folder>
+        <folder>tmpl/images</folder>
+        <filename>mod_phz_latest_message_for_facebook.xml</filename>
+        <filename module="mod_phz_latest_message_for_facebook">mod_phz_latest_message_for_facebook.php</filename>
+        <filename>helper.php</filename>
+        <filename>LICENSE.txt</filename>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.mod_phz_latest_message_for_facebook.ini</language>
+        <language tag="en-GB">en-GB.mod_phz_latest_message_for_facebook.sys.ini</language>
+        <language tag="fi-FI">fi-FI.mod_phz_latest_message_for_facebook.ini</language>
+        <language tag="fi-FI">fi-FI.mod_phz_latest_message_for_facebook.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="access_token"
+                    type="text"
+                    required="required"
+                    label="MOD_PHZ_LATEST_MESSAGE_FOR_FACEBOOK_FIELD_ACCESS_TOKEN_LABEL"
+                    description="MOD_PHZ_LATEST_MESSAGE_FOR_FACEBOOK_FIELD_ACCESS_TOKEN_DESC" />
+                <field
+                    name="page_id"
+                    type="text"
+                    required="required"
+                    label="MOD_PHZ_LATEST_MESSAGE_FOR_FACEBOOK_FIELD_PAGE_ID_LABEL"
+                    description="MOD_PHZ_LATEST_MESSAGE_FOR_FACEBOOK_FIELD_PAGE_ID_DESC" />
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                    name="show_link"
+                    type="radio"
+                    default="1"
+                    label="MOD_PHZ_LATEST_MESSAGE_FOR_FACEBOOK_SHOW_JOIN_US_LABEL"
+                    description="MOD_PHZ_LATEST_MESSAGE_FOR_FACEBOOK_SHOW_JOIN_US_DESC">
+                    <option
+                        value="1">JYES</option>
+                    <option
+                        value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
